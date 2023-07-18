@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#nav{
+    /* background-color: red; */
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 100px;
+    gap: 30px;
+    position: fixed;
+    z-index: 999;
+
+}
+#nav img{
+    height: 4.5vw;
+    
+}
+
+#nav h4{
+    font-size: 1.15vw;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#main{
+    background-color: rgba(0, 0, 0, 0.37);
+    position: relative;
+    
+    
+}
+
+#page1{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1{
+    font-size: 7vw;
+    position: relative;
+}
+
+#page1 h2{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#page1 p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 40%;
+
+}
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #000;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 1.5px #95c11e;
+    z-index: -1;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+}
