@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 *{
     margin: 0;
@@ -7,6 +8,28 @@
     box-sizing: border-box;
     color: #fff;
 }
+
+#cursor{
+
+height: 25px;
+width: 25px;
+background-color: #95c11e;
+border-radius: 50%;
+position: fixed;
+z-index: 99;
+
+}
+
+#cursor-blur{
+    height: 300px;
+    width: 300px;
+    background-color: #72863a;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(70px);
+    z-index: 9;
+}
+
 
 #nav{
     /* background-color: red; */
@@ -87,4 +110,51 @@ video{
 #page2{
     height: 100vh;
     width: 100%;
+    z-index: 10;
 }
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+
+    display: none;
+}
+#scroller-in {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+#scroller h4{
+font-size: 100px;
+font-weight: 900;
+display: inline-block;
+margin-right: 20px;
+font-family: 'Roboto', sans-serif;
+color: #000;
+transition: all linear 0.3s;
+-webkit-text-stroke: 2px #ffffff;
+}
+
+#scroller h4:hover{
+    color: #95c11e;
+    -webkit-text-stroke: 2px #95c11e;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
