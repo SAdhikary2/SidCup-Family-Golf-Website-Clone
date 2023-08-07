@@ -28,7 +28,7 @@ z-index: 99;
 #cursor-blur{
     height: 300px;
     width: 300px;
-    background-color: #72863a;
+    background-color: #69783e;
     border-radius: 50%;
     position: fixed;
     filter: blur(70px);
@@ -144,7 +144,7 @@ font-size: 100px;
 font-weight: 900;
 display: inline-block;
 margin-right: 20px;
-font-family: 'montserrat';
+font-family: 'Roboto';
 color: transparent;
 transition: all linear 0.3s;
 -webkit-text-stroke: 2px #95c11e;
@@ -227,7 +227,7 @@ transition: all linear 0.3s;
    background-size: cover;
     background-position: center;
     overflow: hidden;
-    transition: all ease 1s;
+    transition: all ease 0.5s;
  
 }
 
@@ -433,7 +433,7 @@ background: linear-gradient(to left bottom, #17c047,#c7fa3b);
 
 #f2 h2{
     color: #000;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 900;
     white-space: nowrap;
     margin-top: 12px;
@@ -441,21 +441,21 @@ background: linear-gradient(to left bottom, #17c047,#c7fa3b);
 
 #f3 h2{
     color: #000;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 900;
     white-space: nowrap;
     margin-top: 12px;
 }
 
 #f4 p{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     color: #000;
 }
 
 #f4 h4{
     color: #000;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 900;
     white-space: nowrap;
     margin-top: 12px;
@@ -469,5 +469,24 @@ color: #000;
 #footer-section2{
     display: flex;
     gap: 30px;
-    left: 50px;
+    justify-content: center;
+
+}
+#footer-section3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+#footer-section3 p{
+font-size: 1rem;
+color: #000;
+
+}
+
+#footer-section3 h6{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
 }
