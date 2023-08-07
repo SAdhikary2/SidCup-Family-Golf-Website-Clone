@@ -332,3 +332,142 @@ background: linear-gradient(to left bottom, #17c047,#c7fa3b);
     right: 15%;
     bottom: 36%;
 }
+
+/* applying css in the page4 */
+#page4{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+#small-part{
+    height: 65%;
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+#small-part h2{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    position: absolute;
+    z-index: 10;
+    font-size: 2vw;
+    transition: all ease 0.5s;
+
+}
+
+#small-part img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.1;
+
+}
+
+#small-part:hover h2{
+    color: #fff;
+    background-color: transparent;
+}
+
+#small-part:hover img{
+    scale: 1;
+}
+
+#page4 h1{
+    position: absolute;
+    font-size: 5.5vw;
+    top: -5%;
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    -webkit-text-stroke: 2px #fff;
+}
+
+#footer{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to left bottom,#17c047,#c7fa3b);
+    position: relative;
+    z-index: 9;
+
+}
+
+#footer-section1{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: 14vh;
+    gap: 6.5vw;
+    padding: 0 100px;
+}
+
+
+
+#f1 img{
+    height: 100px;
+}
+
+#f1,
+#f2,
+#f3,
+#f4{
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+}
+
+#f2 h2{
+    color: #000;
+    font-size: 1.4em;
+    font-weight: 900;
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+#f3 h2{
+    color: #000;
+    font-size: 1.4em;
+    font-weight: 900;
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+#f4 p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #000;
+}
+
+#f4 h4{
+    color: #000;
+    font-size: 1.4em;
+    font-weight: 900;
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+.icon{
+color: #000;
+
+}
+
+#footer-section2{
+    display: flex;
+    gap: 30px;
+    left: 50px;
+}

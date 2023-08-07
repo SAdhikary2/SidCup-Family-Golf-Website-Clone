@@ -65,19 +65,6 @@ gsap.from('#About-us img,#About-us-in',{
     }
 });
 
-// card scroller animation
-// gsap.from('.card',{
-//     scale:0.8,
-//     duration:0.5,
-//     stagger:0.1,
-//     scrollTrigger:{
-//         trigger:".card",
-//         scroller:'body',
-//         start:"top 70%",
-//         end:"top 65%",
-//         scrub:1
-//     }
-// });
 
 //colon scroller animation
 gsap.from('#colon1',{
@@ -97,6 +84,17 @@ gsap.from('#colon2',{
     x:70,
     scrollTrigger:{
         trigger:"#colon2",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 70%",
+        scrub:4
+    }
+})
+
+gsap.from('#page4 h1',{
+    y:50,
+    scrollTrigger:{
+        trigger:"#page4 h1",
         scroller:"body",
         start:"top 80%",
         end:"top 70%",
